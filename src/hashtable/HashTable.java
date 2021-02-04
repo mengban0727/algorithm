@@ -22,7 +22,7 @@ public class HashTable<K, V> {
   /**
    * 散列表数组
    */
-  private Entry<K, V>[] tables;
+  private Entry<K, V>[] table;
 
   /**
    * 索引数量
@@ -49,7 +49,7 @@ public class HashTable<K, V> {
   }
 
   public HashTable() {
-    tables = new Entry[DEFAULT_CAPACITY];
+    table = new Entry[DEFAULT_CAPACITY];
   }
 
   /**
@@ -60,19 +60,19 @@ public class HashTable<K, V> {
     int index = hash(key);
 
     //2.判断index位置是否已经使用，若没有创建哨兵节点
-    if (tables[index] == null) {
-      tables[index] = new Entry<>(null, null, null);
+    if (table[index] == null) {
+      table[index] = new Entry<>(null, null, null);
     }
 
     //拿到哨兵节点
-    Entry<K, V> tmp = tables[index];
+    Entry<K, V> tmp = table[index];
     //当前下标没有存放元素
     if (tmp.next == null) {
       tmp.next = new Entry<>(key, value, null);
       size++;
       use++;
       //扩容
-      if (use >= tables.length * LOAD_FACTOR) {
+      if (use >= table.length * LOAD_FACTOR) {
         resize();
       }
     }
@@ -87,15 +87,15 @@ public class HashTable<K, V> {
       } while (tmp.next != null);
 
       //没有找到则，头插入链表
-      Entry<K, V> head = tables[index].next;
-      tables[index].next = new Entry<>(key, value, head);
+      Entry<K, V> head = table[index].next;
+      table[index].next = new Entry<>(key, value, head);
       size++;
     }
   }
 
   private void resize() {
-    Entry<K, V>[] oldTables = tables;
-    tables = new Entry[tables.length * 2];
+    Entry<K, V>[] oldTables = table;
+    table = new Entry[table.length * 2];
     use = 0;
 
     for (int i = 0; i < oldTables.length; i++) {
@@ -107,11 +107,11 @@ public class HashTable<K, V> {
       while (entry.next != null) {
         entry = entry.next;
         int index = hash(entry.key);
-        if (tables[index] == null) {
+        if (table[index] == null) {
           use++;
-          tables[index] = new Entry<>(null, null, null);
+          table[index] = new Entry<>(null, null, null);
         }
-        tables[index].next = new Entry<>(entry.key, entry.value, tables[index].next);
+        table[index].next = new Entry<>(entry.key, entry.value, table[index].next);
       }
     }
   }
@@ -124,13 +124,13 @@ public class HashTable<K, V> {
 
     int index = hash(key);
 
-    Entry<K, V> entry = tables[index];
+    Entry<K, V> entry = table[index];
     if (entry == null || entry.next == null) {
       return;
     }
 
     Entry<K, V> pre;
-    Entry<K, V> head = tables[index];
+    Entry<K, V> head = table[index];
 
     do {
       pre = entry;
@@ -154,7 +154,7 @@ public class HashTable<K, V> {
     }
 
     int index = hash(key);
-    Entry<K, V> entry = tables[index];
+    Entry<K, V> entry = table[index];
     if (entry == null || entry.next == null) {
       return null;
     }
@@ -175,7 +175,7 @@ public class HashTable<K, V> {
    */
   private int hash(K key) {
     int h;
-    return (key == null) ? 0 : ((h = key.hashCode()) ^ (h >>> 16)) % tables.length;
+    return (key == null) ? 0 : ((h = key.hashCode()) ^ (h >>> 16)) % table.length;
   }
 
 
