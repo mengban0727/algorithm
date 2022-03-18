@@ -1,7 +1,7 @@
 package queue;
 
 /**
- * 链表实现队列
+ * 链表实现队列 2022
  *
  * @author zhangjie
  */

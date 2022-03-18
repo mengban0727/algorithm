@@ -36,10 +36,10 @@ public class BinarySearch {
     int high = n - 1;
     while (low <= high) {
       int mid = low + (high - low) / 2;
-      if (a[low] > value) {
-        high = low - 1;
-      } else if (a[low] < value) {
-        low = low + 1;
+      if (a[mid] > value) {
+        high = mid - 1;
+      } else if (a[mid] < value) {
+        low = mid + 1;
       } else {
         if ((mid == 0) || a[mid - 1] != value) {
           return mid;
