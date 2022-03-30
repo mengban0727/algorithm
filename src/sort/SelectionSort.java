@@ -9,6 +9,7 @@ public class SelectionSort {
     if (n <= 1) {
       return;
     }
+    //l=[5,8,5,2,9] 不稳定排序
     for (int i = 0; i < n - 1; i++) {
       int min = i;
       for (int j = i + 1; j < n; j++) {
