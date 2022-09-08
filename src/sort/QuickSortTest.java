@@ -1,5 +1,7 @@
 package sort;
 
+import java.util.Arrays;
+
 /**
  * @author zhangjie
  */
@@ -33,7 +35,7 @@ public class QuickSortTest {
     }
 
     swap(a,i,right);
-    return right;
+    return i;
   }
 
   private static void swap(int[] a, int i, int j) {
@@ -43,8 +45,8 @@ public class QuickSortTest {
   }
 
   public static void main(String[] args) {
-    int [] a = new int[]{3,4,5,1,2};
+    int [] a = new int[]{2, 5, 1, 3, 6, 2};
     quickSort(a,0,a.length-1);
-    System.out.println(a);
+    System.out.println(Arrays.toString(a));
   }
 }
