@@ -1,7 +1,8 @@
 package array;
 
-import java.text.DecimalFormat;
-
+/**
+ * 跳跃游戏 https://leetcode.cn/problems/jump-game/ 跳跃游戏2 https://leetcode.cn/problems/jump-game-ii/
+ */
 class JumpGame {
 
   public static int jump(int[] nums) {
@@ -44,22 +45,35 @@ class JumpGame {
 
     int maxPosition = 0;
     for (int i = 0; i < nums.length; i++) {
-
       if (i <= maxPosition) {
         maxPosition = Math.max(maxPosition, i + nums[i]);
-
         if (maxPosition >= nums.length - 1) {
           return true;
         }
-
       }
+    }
+    return false;
+  }
 
-
+  public static boolean jump4(int[] nums) {
+    if (nums == null || nums.length == 0) {
+      return false;
     }
 
-    return false;
+    int len = 0;
+    for (int i = 0; i < nums.length; i++) {
+      if (len >= i) {
+        len = Math.max(len, nums[i] + i);
+      }
+    }
 
+    if (len >= nums.length - 1) {
+      return true;
+    } else {
+      return false;
+    }
   }
+
 
   public int[][] generateMatrix(int n) {
     int[][] nums = new int[n][n];
@@ -168,9 +182,9 @@ class JumpGame {
     //zero左侧的为0的数
     int zero = 0;
     //two右侧的为2的数
-    int two = nums.length-1;
+    int two = nums.length - 1;
 
-    while (index<=two) {
+    while (index <= two) {
       if (nums[index] == 0) {
         swap(nums, index, zero);
         index++;
@@ -196,24 +210,7 @@ class JumpGame {
 
 
   public static void main(String[] args) {
-  //  sortColors(new int[]{2,0,2,1,1,0});
-
-
-    System.out.println(new DecimalFormat("000,000.00").format(12222111.5888));
-    System.out.println(new DecimalFormat("000,000.00").format(1111.5888));
-    System.out.println(new DecimalFormat("000,000.00").format(1111.7844));
-    System.out.println(new DecimalFormat("000,000.00").format(1112.98));
-    System.out.println(new DecimalFormat("000,000.00").format(1113.80));
-    System.out.println(new DecimalFormat("000,000.00").format(1114.8));
-    System.out.println(new DecimalFormat("000,000.00").format(1115.00));
-    System.out.println(new DecimalFormat("000,000.00").format(0.686));
-    System.out.println(new DecimalFormat("000,000.00").format(0.784));
-    System.out.println(new DecimalFormat("000,000.00").format(0.88));
-    System.out.println(new DecimalFormat("000,000.00").format(0.8));
-    System.out.println(new DecimalFormat("000,000.00").format(0));
-
-
-
+    //  sortColors(new int[]{2,0,2,1,1,0});
     //jump2(new int[]{2, 3, 1, 2, 4});
   }
 }

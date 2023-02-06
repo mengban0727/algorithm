@@ -1,7 +1,7 @@
 package array;
 
 /**
- * 第一个缺失的正数
+ * 缺失的第一个正数 https://leetcode.cn/problems/first-missing-positive/
  *
  * @author zhangjie
  */
