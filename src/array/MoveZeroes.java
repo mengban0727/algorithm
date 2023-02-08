@@ -1,6 +1,8 @@
 package array;
 
 /**
+ * 移动零 https://leetcode.cn/problems/move-zeroes/
+ *
  * @author zhangjie
  */
 public class MoveZeroes {

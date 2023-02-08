@@ -1,5 +1,8 @@
 package array;
 
+/**
+ * 删除有序数组中的重复项 https://leetcode.cn/problems/remove-duplicates-from-sorted-array/
+ */
 class RemoveDuplicates {
     public static int removeDuplicates(int[] nums) {
         //已经去重后的下标

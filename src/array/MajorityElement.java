@@ -1,6 +1,7 @@
 package array;
 
 /**
+ * 多数元素 https://leetcode.cn/problems/majority-element/
  * 众数-摩尔投票法
  *
  * @author zhangjie

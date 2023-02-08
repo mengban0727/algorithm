@@ -5,7 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 三数之和
+ * 三数之和: https://leetcode.cn/problems/3sum/
+ *
+ * Krahets: https://leetcode.cn/problems/3sum/solutions/11525/3sumpai-xu-shuang-zhi-zhen-yi-dong-by-jyd/
  *
  * @author zhangjie
  */

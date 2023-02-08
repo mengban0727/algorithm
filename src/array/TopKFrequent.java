@@ -1,13 +1,15 @@
 package array;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 
 /**
+ * 前 K 个高频元素
+ *
+ * https://leetcode.cn/problems/top-k-frequent-elements/
+ *
  * @author zhangjie
  */
 public class TopKFrequent {
