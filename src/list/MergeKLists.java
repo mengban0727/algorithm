@@ -2,7 +2,7 @@ package list;
 
 
 /**
- * 合并多个有序链表
+ * 合并K个升序链表 https://leetcode.cn/problems/merge-k-sorted-lists/
  *
  * @author zhangjie
  */

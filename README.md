@@ -27,14 +27,70 @@
 
 * [分割链表](src/list/SplitLinkedList.java)
 
+* [环形链表](src/list/CycleList.java)
+
+* [LruBaseList-单向](src/list/LruBaseList.java)
+
+* [LruCache-双向+map](src/list/LRUCache2.java)
+
+* [合并两个有序链表](src/list/MergeTwoList.java)
+
+* [合并K个升序链表](src/list/MergeKLists.java)
+
+* [链表中间节点-快慢指针](src/list/MiddleNode.java)
+
+* [删除链表的倒数第N个结点-双指针](src/list/RemoveNthFromEnd.java)
+
+* [反转链表](src/list/ReverseList.java)
+
+* [排序链表-归并与迭代](src/list/SortList.java)
+
+* [跳表实现-理解](src/list/Skiplist.java)
+
   
+
+## 排序
+
+* 
+
+
 
 ## 树
 
 * [从前序与中序遍历序列构造二叉树-dfs](src/tree/PreorderAndInorderTraversal.java)
 
-  
+
+
+## 队列
+
+* 
+
+
+
+## 栈
+
+* 
+
+
+
+## 堆
+
+
+
+## 哈希表
+
+
+
+## 图
+
+
+
+## 二分查找
+
+
 
 ## 回溯
 
 * [不同路径-剪枝+dp](src/recursion/UniquePaths.java)
+
+## 动态规划

@@ -2,7 +2,7 @@ package list;
 
 
 /**
- * 链表的中间节点
+ * 链表的中间节点 https://leetcode.cn/problems/middle-of-the-linked-list/
  *
  * @author zhangjie
  */

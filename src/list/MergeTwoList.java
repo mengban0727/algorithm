@@ -2,7 +2,7 @@ package list;
 
 
 /**
- * 合并两个有序链表
+ * 合并两个有序链表 https://leetcode.cn/problems/merge-two-sorted-lists/
  *
  * @author zhangjie
  */
@@ -27,7 +27,7 @@ public class MergeTwoList {
     while (listNode1 != null && listNode2 != null) {
       if (listNode1.val < listNode2.val) {
         pre.next = listNode1;
-        listNode1 = listNode2.next;
+        listNode1 = listNode1.next;
       } else {
         pre.next = listNode2;
         listNode2 = listNode2.next;

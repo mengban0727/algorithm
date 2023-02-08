@@ -1,7 +1,7 @@
 package list;
 
 /**
- * 单链表反转
+ * 单链表反转 https://leetcode.cn/problems/reverse-linked-list/
  *
  * @author zhangjie
  */
