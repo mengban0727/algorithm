@@ -51,4 +51,26 @@ public class QuickSort {
     //返回分区点的下标
     return i;
   }
+
+  private static int partision(int []a,int left,int right){
+    int pivot = a[right];
+    int i = left;
+    for(int j = left; j < right-1;j++){
+      if(a[j]>pivot){
+
+      }else{
+        if(i==j){
+          i++;
+        }
+        int tmp = a[i];
+        a[i++] = a[j];
+        a[j] = tmp;
+      }
+    }
+
+    a[right] = a[i];
+    a[i] = pivot;
+
+    return i;
+  }
 }

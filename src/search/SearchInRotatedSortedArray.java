@@ -1,15 +1,16 @@
 package search;
 
 /**
- * 循环有序数组查找指定元素下标
+ * 搜索旋转排序数组 https://leetcode.cn/problems/search-in-rotated-sorted-array/
  *
  * @author zhangjie
  */
-public class BSearchInCircleSortedArray {
+public class SearchInRotatedSortedArray {
 
-  public static int bSearchInCircleSortedArray(int[] nums, int target) {
+  public static int solution(int[] nums, int target) {
     int low = 0;
     int high = nums.length - 1;
+
 
     while (low <= high) {
       int mid = low + ((high - low) >> 1);
@@ -18,7 +19,7 @@ public class BSearchInCircleSortedArray {
         return mid;
       }
 
-      //前半部分有序
+      //前半部分有序 2,3,4,5,6,7,1
       if (nums[low] <= nums[mid]) {
 
         //判断target在不在前半部分
@@ -28,7 +29,7 @@ public class BSearchInCircleSortedArray {
           low = mid + 1;
         }
       }
-      //后半部分有序
+      //后半部分有序  6,7,1,2,3,4,5
       else {
         if (target > nums[mid] && target <= nums[high]) {
           low = mid + 1;

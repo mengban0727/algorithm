@@ -5,6 +5,8 @@ import java.util.LinkedList;
 /**
  * 滑动窗口最大值
  *
+ * https://leetcode.cn/problems/sliding-window-maximum/solutions/667836/dong-hua-yan-shi-dan-diao-dui-lie-239hua-hc5u/
+ *
  * @author zhangjie
  */
 public class SlidingWindowMaximum {
