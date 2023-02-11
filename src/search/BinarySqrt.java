@@ -2,6 +2,7 @@ package search;
 
 /**
  * 二分法求平方根 https://leetcode.cn/problems/sqrtx/solutions/?orderBy=hot
+ *
  * https://leetcode.cn/problems/sqrtx/solutions/7866/er-fen-cha-zhao-niu-dun-fa-python-dai-ma-by-liweiw/?orderBy=hot
  *
  * @author zhangjie

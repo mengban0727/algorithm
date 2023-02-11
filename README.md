@@ -104,10 +104,17 @@
 * [循环队列](src/queue/CircleQueue.java)
 * [循环双端队列](src/queue/CircleDeque.java)
 * [链表实现队列](src/queue/LinkedListQueue.java)
-* [滑动窗口最大值-双端队列-单调队列](src/queue/SlidingWindowMaximum.java)
+* [滑动窗口最大值-双端队列-单调栈](src/queue/SlidingWindowMaximum.java)
 
 ## 栈
 
+* [数组实现栈](src/stack/ArrayStack.java)
+* [链表实现栈](src/stack/LinkedListStack.java)
+* [每日温度-单调栈](src/stack/DailyTemperature.java)
+* [字符串解码-两个栈](src/stack/DecodeString.ajva)
+* [最短无序连续子数组-双指针左右边界/两个单调栈](src/stack/FindUnsortedSubarray.java)
+* [柱状图中最大的矩形-单调栈](src/stack/LargestRectangleArea.java)
+* [最长有效括号-单调栈(预置-1参照物解决空栈问题)/dp[i]以i结尾的最长有效长度](src/stack/LongestValidParentheses.java)
 * 
 
 

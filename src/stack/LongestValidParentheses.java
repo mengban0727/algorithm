@@ -4,7 +4,9 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * 最长有效括号
+ * 最长有效括号 https://leetcode.cn/problems/longest-valid-parentheses/description
+ *
+ * 栈 https://leetcode.cn/problems/longest-valid-parentheses/solutions/314827/shou-hua-tu-jie-zhan-de-xiang-xi-si-lu-by-hyj8/
  *
  * @author zhangjie
  */

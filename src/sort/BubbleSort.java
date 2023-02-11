@@ -17,7 +17,7 @@ public class BubbleSort {
     //比较的边界
     int sortBorder = n - 1;
 
-    for (int i = 0; i < n-1; i++) {
+    for (int i = 0; i < n - 1; i++) {
       //提前退出标志
       boolean flag = false;
       for (int j = 0; j < sortBorder; j++) {
