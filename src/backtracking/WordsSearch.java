@@ -1,6 +1,8 @@
 package backtracking;
 
 /**
+ * https://leetcode.cn/problems/word-search/description/
+ *
  * @author zhangjie
  */
 public class WordsSearch {
@@ -39,7 +41,7 @@ public class WordsSearch {
       int newI = i + directions[k][0];
       int newJ = j + directions[k][1];
       if (newI >= 0 && newI <= board.length - 1 && newJ >= 0 && newJ <= board[0].length - 1) {
-        if(visited[newI][newJ]){
+        if (visited[newI][newJ]) {
           continue;
         }
         if (dfs(board, word, visited, newI, newJ, index + 1)) {

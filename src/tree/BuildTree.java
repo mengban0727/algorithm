@@ -4,11 +4,10 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 /**
- * 路径总和
- *
  * @author zhangjie
  */
 public class BuildTree {
+
   static class TreeNode {
 
     int val;
