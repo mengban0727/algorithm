@@ -4,34 +4,36 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
+ * 逆波兰表达式求值 https://leetcode.cn/problems/evaluate-reverse-polish-notation/
+ *
  * @author zhangjie
  */
 public class ReversePolishNotation {
 
-  public static int evalRPN(String []tokens){
+  public static int evalRPN(String[] tokens) {
     Deque<Integer> stack = new ArrayDeque<>();
-    Integer op1,op2;
+    Integer op1, op2;
     for (String token : tokens) {
-      switch (token){
+      switch (token) {
         case "+":
           op2 = stack.pop();
           op1 = stack.pop();
-          stack.push(op1+op2);
+          stack.push(op1 + op2);
           break;
         case "-":
           op2 = stack.pop();
           op1 = stack.pop();
-          stack.push(op1-op2);
+          stack.push(op1 - op2);
           break;
         case "*":
           op2 = stack.pop();
           op1 = stack.pop();
-          stack.push(op1*op2);
+          stack.push(op1 * op2);
           break;
         case "/":
           op2 = stack.pop();
           op1 = stack.pop();
-          stack.push(op1/op2);
+          stack.push(op1 / op2);
           break;
         default:
           stack.push(Integer.parseInt(token));
