@@ -131,6 +131,9 @@
 ## 树
 
 * [从前序与中序遍历序列构造二叉树-dfs](src/tree/PreorderAndInorderTraversal.java)
+* [构建树](src/tree/BuildTree.java)
+* [路径总和](src/tree/PathSum.java)
+* [路径总和3-dfs+前缀和](src/tree/PathSum3.java)
 
 
 
@@ -146,9 +149,20 @@
 
 
 
+## 递归
+
+* [n阶乘](src/recursion/Factorial.java)
+* [斐波那契数列](src/recursion/Fibonacci.java)
+
+
+
 ## 回溯
 
-* [不同路径-剪枝+dp](src/recursion/UniquePaths.java)
+* [不同路径-剪枝+dp](src/backtracking/UniquePaths.java)
+* [组合总和](src/backtracking/CombinationSum.java)
+* [电话号码的字母组合](src/backtracking/LetterCombinations.java)
+* [全排列](src/backtracking/Permutations.java)
+* [单词搜索](src/backtracking/WordsSearch.java)
 
 
 

@@ -1,14 +1,44 @@
-package recursion;
+package backtracking;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 
 /**
- * n个数的全排列
+ * 全排列 https://leetcode.cn/problems/permutations/description/
  *
  * @author zhangjie
  */
 public class Permutations {
+
+  public List<List<Integer>> permute1(int[] nums) {
+    List<List<Integer>> result = new ArrayList<>();
+    Deque<Integer> path = new ArrayDeque<>();
+    boolean[] flag = new boolean[nums.length];
+    dfs1(nums, result, path, flag);
+    return result;
+  }
+
+  public void dfs1(int[] nums, List<List<Integer>> result, Deque<Integer> path, boolean[] flag) {
+
+    if (path.size() == nums.length) {
+      result.add(new ArrayList<>(path));
+      return;
+    }
+
+    for (int i = 0; i < nums.length; i++) {
+      if (flag[i]) {
+        continue;
+      }
+      path.push(nums[i]);
+      flag[i] = true;
+      dfs1(nums, result, path, flag);
+      path.pop();
+      flag[i] = false;
+    }
+  }
+
 
   public List<List<Integer>> permute(int[] nums) {
     List<List<Integer>> result = new ArrayList<>();
