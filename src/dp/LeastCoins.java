@@ -2,9 +2,11 @@ package dp;
 
 /**
  * 找零问题
+ *
  * @author zhangjie
  */
 public class LeastCoins {
+
   public static int countMoneyMin(int[] moneyItems, int resultMemory) {
 
     if (null == moneyItems || moneyItems.length < 1) {
@@ -77,6 +79,6 @@ public class LeastCoins {
   }
 
   public static void main(String[] args) {
-    countMoneyMin(new int[]{1,3,5},23);
+    countMoneyMin(new int[]{1, 3, 5}, 23);
   }
 }

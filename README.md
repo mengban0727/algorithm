@@ -134,6 +134,7 @@
 * [构建树](src/tree/BuildTree.java)
 * [路径总和](src/tree/PathSum.java)
 * [路径总和3-dfs+前缀和](src/tree/PathSum3.java)
+* [前缀树实现](src/tree/Trie.java)
 
 
 
@@ -167,3 +168,9 @@
 
 
 ## 动态规划
+
+* [背包0-1](src/dp/Backpack1.java)
+* [爬楼梯](src/dp/ClimbStairs.java)
+* [分割等和子集-转换成0-1背包](src/dp/PartitionEqualSubsetSum.java)
+* [零钱兑换](src/dp/CoinChange1.java)
+

@@ -12,8 +12,12 @@ public class FindTargetSumWays {
   public int findTargetSumWays2(int[] nums, int t) {
     int n = nums.length;
     int s = 0;
-    for (int i : nums) s += Math.abs(i);
-    if (Math.abs(t) > s) return 0;
+    for (int i : nums) {
+      s += Math.abs(i);
+    }
+    if (Math.abs(t) > s) {
+      return 0;
+    }
     int[][] f = new int[n + 1][2 * s + 1];
     f[0][0+s] = 1;
     for (int i = 1; i <= n; i++) {
