@@ -14,6 +14,8 @@
 
 * [跳跃游戏](src/array/JumpGame.java)
 
+* [跳跃游戏2](src/array/JumpGame2.java)
+
 * [LruBaseArray](src/array/LruBaseArray.java)
 
 * [多数元素-摩尔投票法](src/array/MajorityElement.java)
