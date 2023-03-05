@@ -113,7 +113,7 @@
 * [数组实现栈](src/stack/ArrayStack.java)
 * [链表实现栈](src/stack/LinkedListStack.java)
 * [每日温度-单调栈](src/stack/DailyTemperature.java)
-* [字符串解码-两个栈](src/stack/DecodeString.ajva)
+* [字符串解码-两个栈](src/stack/DecodeString.java)
 * [最短无序连续子数组-双指针左右边界/两个单调栈](src/stack/FindUnsortedSubarray.java)
 * [柱状图中最大的矩形-单调栈](src/stack/LargestRectangleArea.java)
 * [最长有效括号-单调栈(预置-1参照物解决空栈问题)/dp[i]以i结尾的最长有效长度](src/stack/LongestValidParentheses.java)
