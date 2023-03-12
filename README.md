@@ -175,4 +175,5 @@
 * [爬楼梯](src/dp/ClimbStairs.java)
 * [分割等和子集-转换成0-1背包](src/dp/PartitionEqualSubsetSum.java)
 * [零钱兑换](src/dp/CoinChange1.java)
+* [最长回文字串](src/dp/LongestPalindromicSubstring.java)
 
