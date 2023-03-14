@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class QuickSortYuanBao {
 
     public static void main(String[] args) {
-      int[] nums = new int[]{3,1,4,53,2};
+      int[] nums = new int[]{3,9,4,7,8,7,5,5,8,6};
       quickSort(nums,0,nums.length-1);
       System.out.println(Arrays.toString(nums));
     }
@@ -34,6 +34,7 @@ public class QuickSortYuanBao {
         }else{
           swap(nums,left,right);
           left++;
+          right++;
         }
       }
       swap(nums,left,pivot);
